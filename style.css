@@ -113,7 +113,7 @@ footer {
     background-color: #cdf1d9;
 }
 
-.burger-menu-btn {
+#burger-menu-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,11 +131,58 @@ footer {
     cursor: pointer;
     padding: 5px;
     border: none;
+    position: relative;
 }
 
-.burger-menu {
-    
+#burger-menu {
+    max-height: 100vh;
+    /* width: clamp(300px, 40vw, 500px); */
+    max-width: 0px;
+    background-color: #9cb8a5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
+#burger-menu a {
+    text-decoration: none;
+    color: #424e46;
+    padding: 5px;
+
+}
+
+/* #burger-menu a:hover {
+    background-color: #424e46;
+    color: #9cb8a5;
+}
+
+#burger-menu-btn:hover {
+    background-color: #424e46;
+}
+
+#burger-menu-btn:hover .bread {
+    background-color: #9cb8a5;
+    position: absolute;
+}
+
+#burger-menu-btn:hover .bread:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+#burger-menu-btn:hover .bread:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+#burger-menu-btn:hover .bread:nth-child(2) {
+     opacity: 0;
+} */
+
 
 .bread {
     width: 80%;

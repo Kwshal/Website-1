@@ -1,0 +1,24 @@
+repetition can be avoid when declaring properties in javascript using Object.assign instead:
+       
+       
+     Example:
+       Object.assign(burgerMenu.style, {
+          display: "flex",
+          transition: "height 0.9s ease, width 0.9s ease",
+          height: "100vh",
+          width: "clamp(300px, 40vw, 350px)",
+        });
+
+# it's ideal to use max-height or max-width instead of height and width for responsive design.
+
+
+
+
+
+
+
+
+
+
+
+
