@@ -1,6 +1,6 @@
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 8px; /* Adjust scrollbar width */
+    width: 0px; /* Adjust scrollbar width */
 }
 
 ::-webkit-scrollbar-track {
@@ -18,9 +18,9 @@
 
 /* For Firefox */
 * {
-    scrollbar-width: thin; /* Thin scrollbar */
     scrollbar-color: #7b6f8f transparent; /* Thumb color and track color */
-    border-radius: 5px;
+    scrollbar-width: none; /* Hide scrollbar */
+    /* border-radius: 5px; */
 }
 
 /* Smooth scrolling */
