@@ -1,0 +1,133 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth;
+     list-style: none;
+     text-decoration: none;
+     /* border: 1px solid red; */
+
+     /* outline: none; */
+
+}
+
+body {
+     font-family: sans-serif;
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     background-color: #eef0ff;
+     overflow: hidden;
+     overflow-y: scroll;
+}
+:root {
+     --color:  #4c6366;
+     --color2: #cdf1d9;
+     --color4: #556b6b;
+     --color4: #566b55;
+     --color5: #4e4343;
+}
+
+header {
+     height: 45px;
+     width: 100%;
+     display: flex;
+     position: fixed;
+     z-index: 9;
+     justify-content: right;
+     padding: 0 10px;
+     align-items: center;
+     top: 0;
+     background-color: #cdf1d9;
+     font-variant: small-caps;
+}
+header ul {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 10px;
+}
+
+header ul li a {
+     background-color: #9cb8a5;
+     color: #424e46;
+     padding: 5px 10px;
+     border-radius: 5px;
+}
+
+
+main {
+     /* border: 1px solid #000; */
+     padding-top: 45px;
+     height: 900px;
+     width: clamp(300px, 100%, 1000px);
+     /* background-color: #ff8a8a; */
+     display: flex;
+     gap: 5px;
+     /* justify-content: center; */
+     /* align-items: center; */
+     margin: 0 auto;
+     /* overflow: hidden; */
+     position: relative;
+     /* overflow-y: scroll; */
+}
+
+main section {
+     /* border: 1px solid #000; */
+     height: 900px;
+     /* width: 500px; */
+     width: clamp(300px, 100%, 500px);
+
+     padding: 20px;
+     /* background-color: #ff8a8a; */
+     display: flex;
+     gap: 5px;
+     justify-content: center;
+     /* align-items: center; */
+     margin: 0 auto;
+     overflow: hidden;
+     position: relative;
+     /* overflow-y: scroll; */
+}
+
+footer {
+     height: 450px;
+     width: 100%;
+     display: flex;
+     /* position: fixed; */
+     /* bottom: 0; */
+     z-index: 9;
+     justify-content: center;
+     align-items: center;
+     bottom: 0;
+     background-color: #cdf1d9;
+}
+
+.burger-menu-btn {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 5px;
+     width: 35px;
+     height: 35px;
+     background-color: #9cb8a5;
+     border-radius: 5px;
+     justify-self: flex-start;
+     margin-right: auto;
+     cursor: pointer;
+     padding: 5px;
+     border: none;
+}
+.burger-menu {
+ 
+}
+
+
+.bread {
+     width: 80%;
+     height: 10%;
+     background-color: #424e46;
+}
+
+
