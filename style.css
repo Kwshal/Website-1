@@ -77,19 +77,20 @@ li a {
 }
 
 main {
-    padding-top: 45px;
-    height: 900px;
+    padding: 45px;
+    height: fit-content;
     width: clamp(300px, 100%, 1100px);
     display: flex;
+    /* flex-direction: column; */
     gap: 5px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
-    overflow-y: scroll;
+    /* overflow: scroll;  */
+    /* ? to be changed later */
 }
 
 main section {
-    height: 900px;
+    height: fit-content;
     width: clamp(300px, 100%, 500px);
     padding: 20px;
     display: flex;
@@ -135,26 +136,59 @@ footer {
 }
 
 #burger-menu {
+    height: fit-content;
+    /* border: 2px dashed #000; */
     max-height: 100vh;
-    /* width: clamp(300px, 40vw, 500px); */
-    max-width: 0px;
-    background-color: #9cb8a5;
+    width: clamp(250px, 40vw, 300px);
+    /* background-color: #9cb8a5; */
+    /* background-color: #fff; */
     position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    border-radius: 5px;
-    padding: 5px;
+    top: 45px;
+    left: -100%;
+    display: grid;
+    grid-template-columns: 1fr; /* ? to be recosidered later */
+
+    /* gap: 1px;  */
+    /* ? to be recosidered later */
+    border-radius: 0px;
+    /* padding: 10px; */
     overflow: hidden;
     overflow-y: scroll;
+    overflow-x: scroll;
+    transition: left 200ms ease-out;
+    box-shadow: 0px 0px;
 }
-#burger-menu a {
-    text-decoration: none;
-    color: #424e46;
-    padding: 5px;
 
+@media (max-width: 700px) {
+    #burger-menu {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+
+#burger-menu a {
+    height: 50px;
+    width: 100%;
+    border: 1px dashed #000;
+    border-color:  transparent transparent #424e46 transparent;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #cdf1d9; */
+    /* color: #424e46; */
+    /* margin: auto; */
+}
+#burger-menu a:last-child {
+    border: none;
+}
+#burger-menu::after {
+    content: "";
+    height: 35px;
+    display: block;
 }
 
 /* #burger-menu a:hover {
@@ -190,4 +224,16 @@ footer {
     background-color: #424e46;
 }
 
-
+#theme-btn {
+    width: 35px;
+    height: 35px;
+    background-color: #9cb8a5;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 5px;
+    border: none;
+    /* position: fixed;
+    bottom: 10px;
+    right: 10px; */
+}

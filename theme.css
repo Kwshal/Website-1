@@ -1,0 +1,73 @@
+:root {
+     /* Shades of Black */
+     --jet-black: #343434;
+     --ebony-black: #555D50;
+     --onyx-black: #0F0F0F;
+     --matte-black: #282828;
+     --rich-black: #050505;
+
+     /* Shades of Grey */
+     --gainsboro-grey: #DCDCDC;
+     --light-silver: #D8D8D8;
+     --dim-grey: #696969;
+     --granite-grey: #676767;
+     --slate-grey: #708090;
+
+     /* Shades of White */
+     --pure-white: #FFFFFF;
+     --snow-white: #FFFAFA;
+     --ivory-white: #FFFFF0;
+     --ghost-white: #F8F8FF;
+     --white-smoke: #F5F5F5;
+
+     /* Shades of Purple */
+     --lavender-purple: #E6E6FA;
+     --mauve-purple: #993366;
+     --deep-purple: #673AB7;
+     --plum-purple: #8E4585;
+     --amethyst-purple: #9966CC;
+
+     /* Monochromatic Purples */
+     --lightest-purple: #E6E6FA;
+     /* Lavender */
+     --lighter-purple: #D3C0E0;
+     /* Light Lavender */
+     --medium-purple: #9B59B6;
+     /* Amethyst */
+     --darker-purple: #8E4585;
+     /* Plum */
+     --darkest-purple: #4B2C5E;
+     /* Dark Purple */
+
+}
+
+body {
+     background-color: var(--lightest-purple);
+}
+
+header {
+     background-color: var(--lighter-purple);
+}
+
+ul li {
+     background-color: var(--medium-purple);
+}
+
+li a {
+     color: var(--white-smoke);
+}
+
+#burger-menu a {
+     color: var(--ivory-white);
+     background-color: var(--darkest-purple);
+}
+#burger-menu-btn {
+     background-color: var(--darker-purple);
+}
+.bread {
+     background-color: var(--white-smoke);
+}
+
+
+
+

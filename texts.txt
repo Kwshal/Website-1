@@ -1,3 +1,18 @@
-remove margin or padding from the end of the header.
-add a menu
-add a fav icon
+DONE:
+- remove margin or padding from the end of the header. DONE
+- add a menu. DONE
+
+TODO:
+- add a fav icon
+- add easter eggs:
+     - click on the fav icon to see the easter egg
+     - dbl clik burger-menu to get a secret menu
+     - click on mystery K to get sparkles
+     - more to be added.....
+
+- add links to the: 
+     - github repo
+     - instagram
+     - youtube
+     - spotify
+

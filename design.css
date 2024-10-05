@@ -21,6 +21,7 @@
     scrollbar-color: #7b6f8f transparent; /* Thumb color and track color */
     scrollbar-width: none; /* Hide scrollbar */
     /* border-radius: 5px; */
+    box-sizing: border-box;
 }
 
 /* Smooth scrolling */
